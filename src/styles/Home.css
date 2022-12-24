@@ -12,6 +12,7 @@ body {
 
 div#root {
   height: 100%; /* remove this line to see div.app is no more 100% height */
+  min-height: max-content;
   /* background-color: indigo;
   padding: 0 30px; */
 }

@@ -15,7 +15,7 @@ const animatedGif = require('../images/2GU.gif');
 function AboutMe() {
   const { theme } = useContext(AppContext);
   return (
-    <div>
+    <div className="about-screen">
       <Header />
       <main className={`general-container-${ theme }`}>
         <section id="story-telling">
