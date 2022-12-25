@@ -9,6 +9,7 @@ import * as Icon from "phosphor-react";
 import '../styles/Home.css';
 import Footer from '../components/Footer/Footer';
 import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
+import { fetchRepositories, fetchRepository } from './helpers/requestGitHub';
 
 const perfilImage = require('../images/perfil.jpeg');
 
@@ -31,6 +32,8 @@ function Home() {
     setTimeout(() => {
       setIsLoading(false)
     }, 2000);
+    fetchRepositories();
+    fetchRepository('pixel-art');
   }, []);
 
   const lineBreaker = (text) => {

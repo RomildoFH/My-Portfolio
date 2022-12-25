@@ -220,7 +220,7 @@ https://css-tricks.com/almanac/properties/t/transform/ */
 #projects-portfolio-light {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly ;
   gap: 10px 0;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -231,7 +231,7 @@ https://css-tricks.com/almanac/properties/t/transform/ */
 #projects-portfolio-dark {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 10px 0;
   padding-bottom: 30px;
   padding-top: 30px;
