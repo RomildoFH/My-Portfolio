@@ -63,8 +63,6 @@ div#root {
   background-color: var(--main-bg-light-color);
   color: var(--text-light-color);
   height: 100%;
-  /* height: 92vh; */
-  /* justify-content: space-between; */
 }
 
 #presentation-dark {
@@ -73,7 +71,6 @@ div#root {
   align-items: center;
   background-color: var(--main-bg-dark-color);
   color: var(--text-dark-color);
-  /* height: 92vh; */
 }
 
 #image-container-light {
@@ -222,8 +219,7 @@ https://css-tricks.com/almanac/properties/t/transform/ */
   flex-wrap: wrap;
   justify-content: space-evenly ;
   gap: 10px 0;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 30px 5px;
   background-color: var(--main-bg-light-color);
   color: var(--text-light-color);
 }
@@ -231,10 +227,9 @@ https://css-tricks.com/almanac/properties/t/transform/ */
 #projects-portfolio-dark {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-evenly ;
   gap: 10px 0;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 30px 5px;
   background-color: var(--main-bg-dark-color);
   color: var(--text-dark-color);
 }
@@ -244,12 +239,14 @@ https://css-tricks.com/almanac/properties/t/transform/ */
   height: 199px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: var(--full-white);
+  margin: 4px 4px;
 }
 
 .project-card-dark {
   width: 165px;
   height: 199px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.404);
+  margin: 4px 4px;
 }
 
 .project-img {

@@ -28,16 +28,15 @@ function Header() {
   }
 
   const history = useHistory();
-
-  const determinePosition = () => {
-    if (scrollPosition > 25) {
-      setPosition('fixed');
-    } else {
-      setPosition('block');
-    }
-  }
-
+ 
   useEffect(() => {
+    const determinePosition = () => {
+      if (scrollPosition > 25) {
+        setPosition('fixed');
+      } else {
+        setPosition('block');
+      }
+    }
     determinePosition()
   }, [scrollPosition]);
  
@@ -68,6 +67,7 @@ function Header() {
               <button onClick={() => setMenuHidde(true)}><Link to="/">Home</Link></button>
               <button onClick={() => setMenuHidde(true)}><Link to="/aboutme">About Me</Link></button>
               <button onClick={() => setMenuHidde(true)}><a href="#contact-me">Contact</a></button>
+              {/* <button onClick={() => setMenuHidde(true)}><Link to="/timeline">Timeline</Link></button> */}
             </div>
           ) : null
         }
