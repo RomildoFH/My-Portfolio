@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import AppContext from '../../context/AppContext';
 import { data } from './data';
 
 function Timeline() {
   const [selectedYear, setSelectedYear] = useState(1994);
+  const { theme } = useContext(AppContext);
 
   const selectYear = ({ target }) => {
     const selecteds = document.querySelectorAll('.selected');
@@ -33,14 +35,14 @@ function Timeline() {
   }
 
   return (
-    <main id="timeline">
+    <main className={`timeline ${ theme === 'light' ? 'fullwhite' : 'fullgray' }`}>
       <section id="timeline-controls">
         { createYearList() }
       </section>
       <section className="timeline-discription">
         {
           data.filter((element) => (element.year === selectedYear.toString())).map((element) => (
-            <div className="description-container">
+            <div className="description-container" key={ element.year }>
               <h2 className="description-title">{ element.title }</h2>
               <p className="description-text">{ element.description }</p>
             </div>

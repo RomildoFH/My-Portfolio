@@ -7,6 +7,7 @@ import '../styles/TimeLine.css';
 
 function TimeLine() {
   const { theme } = useContext(AppContext);
+
   return (
     <div className={`timeline-general ${ theme === 'light' ? 'fullwhite' : 'fullgray' }`}>
       <Header />

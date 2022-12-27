@@ -61,14 +61,14 @@ function Header() {
         </div>
         {
           !menuHidde ? (
-            <div
+            <nav
               id={ `menu-container-${ theme }` }
             >
-              <button onClick={() => setMenuHidde(true)}><Link to="/">Home</Link></button>
-              <button onClick={() => setMenuHidde(true)}><Link to="/aboutme">About Me</Link></button>
-              <button onClick={() => setMenuHidde(true)}><a href="#contact-me">Contact</a></button>
-              {/* <button onClick={() => setMenuHidde(true)}><Link to="/timeline">Timeline</Link></button> */}
-            </div>
+              <button className="nav-option" onClick={() => {setMenuHidde(true); history.push('/')}}><Link to="/">Home</Link></button>
+              <button className="nav-option" onClick={() => {setMenuHidde(true); history.push('/aboutme')}}><Link to="/aboutme">About Me</Link></button>
+              <a className="nav-option" href="#contact-me"><button onClick={() => setMenuHidde(true)}>Contact</button></a>
+              <button className="nav-option" onClick={() => {setMenuHidde(true); history.push('/knowledge')}}><Link to="/aboutme">Knowledge</Link></button>
+            </nav>
           ) : null
         }
       </header>
