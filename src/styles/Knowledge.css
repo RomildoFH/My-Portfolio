@@ -97,7 +97,7 @@
 
 .tech-description-container-light {
   box-sizing: border-box;
-  max-height: 280px;
+  max-height: 50%;
   background-color: var(--text-box-light);
   max-width: 90%;
   overflow: scroll;
@@ -111,7 +111,7 @@
 .tech-description-container-dark {
   box-sizing: border-box;
   color: var(--text-dark-color);
-  max-height: 280px;
+  max-height: 50%;
   background-color: var(--text-box-dark);
   max-width: 90%;
   overflow: scroll;
