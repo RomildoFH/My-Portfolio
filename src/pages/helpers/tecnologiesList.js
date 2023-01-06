@@ -1,5 +1,9 @@
 export const technologiesList = [
   {
+    name: '',
+    description: 'Click in one of the technologies to show its content.'
+  },
+  {
     name: 'HTML',
     description: 'HTML (HyperText Markup Language) is a standard markup language used to create web pages and applications. It is used to structure and present content on the World Wide Web. HTML consists of a series of elements, represented by tags, which are used to define the structure and content of a document. These elements can be manipulated with CSS (Cascading Style Sheets) to change their appearance and layout. HTML is written in the form of HTML elements, which consist of tags enclosed in angle brackets. HTML documents are made up of two main parts: the head and the body. The head contains metadata about the document, such as the title and any linked CSS or JavaScript files, while the body contains the actual content of the document.',
     thumb: require('../../images/tecnologies/HTML5_logo_and_wordmark.png'),

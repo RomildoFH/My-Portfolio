@@ -23,7 +23,7 @@ function AboutMe() {
             <h4 className="article-title">Knowledge</h4>
             <div className="list-container">
               {
-                technologiesList.map((tecnologie) => (
+                technologiesList.filter((tecnologie) => (tecnologie.name !== '')).map((tecnologie) => (
                   <img
                   key={ tecnologie.name }
                   src={ tecnologie.thumb }
@@ -36,7 +36,7 @@ function AboutMe() {
           </article>
         </section>
         {
-          selectedTech !== '' ? (
+          selectedTech !== null ? (
           <section className={`tech-description-container-${ theme }`}>
             <h2 className={`tech-name`}>{selectedTech}</h2>
             <p className={`tech-description`}>
