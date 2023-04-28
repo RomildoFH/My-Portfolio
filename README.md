@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-Este é o meu site pessoal de portfólio, construído usando HTML, CSS e JavaScript.
+Este é o meu site pessoal de portfólio, construído usando ReactJS, HTML, CSS e JavaScript.
 
 ## Sobre
 
