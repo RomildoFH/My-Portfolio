@@ -10,6 +10,7 @@ O site contém uma página inicial com informações sobre mim, uma seção de p
 
 ## Tecnologias utilizadas
 
+- ReactJs
 - HTML
 - CSS
 - JavaScript
