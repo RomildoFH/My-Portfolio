@@ -17,7 +17,6 @@ O site contém uma página inicial com informações sobre mim, uma seção de p
 ## Como acessar a aplicação
 
 Você pode acessar a aplicação pelos seguintes links:
-- GitHub Pages: [https://romildofh.github.io/My-Portfolio/](https://romildofh.github.io/My-Portfolio/)
 - Vercel: [https://my-portfolio-romildofh.vercel.app/](https://my-portfolio-romildofh.vercel.app/)
 
 ## Como clonar e rodar localmente a aplicação
@@ -32,4 +31,12 @@ git clone https://github.com/RomildoFH/My-Portfolio.git
 cd My-Portfolio
 ```
 
-3. Abra o arquivo `index.html` em seu navegador da web preferido.
+3. Instale as dependências
+```
+npm install
+```
+
+4. Rode a aplicação localmente
+```
+npm start
+```
